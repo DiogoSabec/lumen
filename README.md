@@ -2,15 +2,69 @@
 
 [Português](README.md) · [English](README.en.md)
 
-Um caderno local para investigar obras e temas à luz da fé católica, com dois modos e uma conversa que evolui com suas perguntas.
+**Ponha uma história contra a luz.**
 
-![Lumen: rosácea, escolhas de estudo e painel local](docs/screenshots/lumen-home.jpg)
+Um caderno de investigação católica para explorar jogos, filmes, séries, livros, mangás e animes ao lado da Escritura, do Catecismo e dos documentos da Igreja. Você escolhe uma obra; o Lumen reúne material de pesquisa e acompanha suas perguntas.
 
-**Código aberto sob licença MIT.** Aplicativo local em Node.js, testado no macOS, com interface em português e inglês. Usa Claude Code ou Codex CLI com o login da sua assinatura; os modelos continuam sendo serviços online.
+**Gratuito e de código aberto · Português e inglês · Caderno local · Claude e ChatGPT**
 
-## Instalar a partir do GitHub
+[Começar](#começar) · [Screenshots](#screenshots) · [Como funciona](#uma-investigação-em-cinco-passos) · [Fontes e limites](#fontes-e-limites)
 
-Pré-requisitos: [Node.js 22+](https://nodejs.org/), Git e pelo menos um dos CLIs instalados e autenticados: [Claude Code](https://code.claude.com/docs/en/quickstart) ou [Codex CLI](https://developers.openai.com/codex/cli/). A assinatura precisa incluir acesso ao CLI escolhido; seus limites continuam valendo.
+## Dois modos de estudar
+
+| | Modo estudo | Resposta direta |
+| --- | --- | --- |
+| **Você recebe** | Passagens, referências, cenas e perguntas, sem entregar os paralelos de imediato. | A leitura completa, com evidência da obra, ensinamento católico, referências e limites. |
+| **Você participa** | Escolhe uma pista, propõe uma ligação e testa sua hipótese na conversa. | Lê a explicação e pergunta, questiona ou aprofunda o que chamou sua atenção. |
+| **A experiência evolui** | A IA pode propor escolhas, entrevistas, desafios e novas pistas. | A IA pode organizar comparações, percursos de leitura e outras apresentações interativas. |
+
+O objetivo é estimular a leitura das fontes. Não há gabarito escondido, obrigação de encontrar uma conexão para tudo ou pontuação de fé. Uma analogia do leitor não demonstra intenção religiosa dos criadores da obra.
+
+## Screenshots
+
+Capturas reais do exemplo preparado de *The Legend of Zelda: Ocarina of Time*. As cenas incluem spoilers; novas pesquisas podem ter outra apresentação, pois a IA escolhe o formato de cada etapa.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Cenas e diálogos da obra</strong><br><br>
+      <img src="docs/screenshots/gallery/03-fragmentos-hyrule-pt.jpg" alt="Fragmentos de Hyrule com Link, a Great Deku Tree, Sheik e uma fala do jogo" width="100%">
+    </td>
+    <td width="50%" valign="top">
+      <strong>Escritura, Catecismo e documentos</strong><br><br>
+      <img src="docs/screenshots/gallery/04-biblia-catecismo-pt.jpg" alt="Cartões de leitura com João 16, Catecismo, Gaudium et spes e uma catequese de Francisco" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>Uma pista para começar</strong><br><br>
+      <img src="docs/screenshots/gallery/05-escolhas-pt.jpg" alt="Desafio aberto para escolher uma leitura e propor uma interpretação própria" width="100%">
+    </td>
+    <td width="50%" valign="top">
+      <strong>O modo resposta direta</strong><br><br>
+      <img src="docs/screenshots/gallery/07-resposta-direta-pt.jpg" alt="Início de uma leitura sobre coragem, com arte do jogo, contexto da cena e interpretação proposta" width="100%">
+    </td>
+  </tr>
+</table>
+
+<details>
+<summary>Ver a tela inicial e o quadro de ligações</summary>
+
+### Escolha a obra, o modo e o fôlego da pesquisa
+
+![Tela inicial do Lumen com a rosácea do tema e as configurações da investigação](docs/screenshots/lumen-home.jpg)
+
+### Construa uma hipótese e registre suas glosas
+
+![Quadro de ligações entre textos da Igreja e cenas da obra, com espaço para anotações](docs/screenshots/lumen-connections.jpg)
+
+</details>
+
+[Galeria completa: 11 prints em PT/EN e quatro rosáceas em SVG](docs/screenshots/gallery/README.md). As artes de terceiros mantêm seus créditos e direitos; veja [THIRD_PARTY.md](THIRD_PARTY.md).
+
+## Começar
+
+Você precisa de [Node.js 22 ou superior](https://nodejs.org/) e Git. Testado no **macOS**; outros sistemas ainda não foram validados.
 
 ```sh
 git clone https://github.com/DiogoSabec/lumen.git
@@ -18,130 +72,131 @@ cd lumen
 npm start
 ```
 
-Abra **http://127.0.0.1:4318** no navegador. Não há dependências npm para instalar. O exemplo de Zelda pode ser aberto sem um login de IA; gerar estudos e continuar conversas exige um provedor autenticado.
+Abra **http://127.0.0.1:4318** no navegador. Não há dependências npm para instalar.
 
-Para criar o atalho de abertura no macOS, execute uma vez na pasta do projeto:
+**Experimente primeiro:** na tela inicial, abra o exemplo de Zelda em modo estudo ou resposta direta. Ele inclui textos, fontes e imagens preparados, funciona sem login de IA e não consome sua assinatura. Continuar a conversa com a IA exige um provedor autenticado.
+
+### Conectar Claude ou ChatGPT
+
+Para gerar novas pesquisas, instale pelo menos um dos CLIs e entre com sua assinatura:
+
+| Provedor no painel | Instalação e acesso | Comando de login |
+| --- | --- | --- |
+| **ChatGPT** | [Codex CLI](https://developers.openai.com/codex/cli/) com login do ChatGPT | `codex login` |
+| **Claude** | [Claude Code](https://code.claude.com/docs/en/quickstart) com login do Claude | `claude auth login` |
+
+O Lumen usa o login do próprio CLI, sem chave de API. Sua assinatura precisa incluir acesso ao CLI escolhido, e os limites e condições do plano continuam valendo. O projeto é gratuito; o acesso aos modelos depende do seu plano. Não há troca automática de provedor.
+
+### Abrir sem terminal no macOS
+
+Na pasta do projeto, execute uma vez:
 
 ```sh
 node scripts/create-mac-app.mjs
 ```
 
-O atalho é gerado para a sua instalação. Ele não é distribuído pronto no repositório.
+Depois, dê dois cliques em **Abrir Lumen.app** no Finder. O servidor inicia em segundo plano e abre o navegador; as pesquisas também rodam sem janela de terminal. Recrie o atalho se mover a pasta ou mudar a instalação do Node. O atalho é gerado para o seu computador e não vem pronto no repositório.
 
-## Abrir
-
-No Finder, dê dois cliques em **Abrir Lumen.app** nesta pasta. O servidor inicia em segundo plano e abre o navegador em **http://127.0.0.1:4318**. As pesquisas também rodam em segundo plano, sem janela de terminal.
-
-Também é possível iniciar com Node.js 22 ou superior:
-
-```sh
-npm start
-```
-
-Nenhum pacote npm precisa ser instalado. Para encerrar o servidor iniciado pelo atalho:
+Para encerrar o servidor iniciado pelo atalho:
 
 ```sh
 node scripts/stop.mjs
 ```
 
-Se mover esta pasta ou mudar a instalação do Node, recrie o atalho:
+Se iniciou com `npm start`, encerre com **Ctrl+C** naquele terminal.
 
-```sh
-node scripts/create-mac-app.mjs
-```
+## Uma investigação em cinco passos
 
-## Usar
+1. **Escolha uma obra ou tema.** Pode ser Zelda, um filme, uma série, um livro, um mangá ou um anime. Use **Tirar a sorte** para descobrir um ponto de partida.
+2. **Defina o recorte.** Informe edição, personagem, assunto e até onde conhece a história. Os spoilers ficam restritos à premissa por padrão.
+3. **Escolha como estudar.** Selecione o modo, o provedor e o fôlego: breve, uma boa pausa ou mergulho.
+4. **Leia e converse.** Abra as referências, formule uma hipótese e peça uma pista ou um aprofundamento. No modo estudo, ligue um fragmento da Igreja a uma cena e justifique sua leitura.
+5. **Guarde o percurso.** Continue pela **Estante**, escreva suas **Glosas** e exporte o estudo em Markdown ou JSON.
 
-1. Informe a obra ou tema. Se quiser, escolha edição, personagem, recorte e limite de spoilers.
-2. Escolha **Modo estudo** ou **Resposta direta**.
-3. Escolha **Claude** ou **ChatGPT** e comece a investigação.
-4. Leia as fontes, ligue fragmentos às cenas, escreva glosas e continue a conversa. Cada estudo vira um volume na **Estante**, salvo em disco.
+O seletor **PT | EN** troca o idioma da interface e das próximas pesquisas e conversas. Estudos salvos mantêm a redação original. Citações literais permanecem no idioma da fonte; traduções livres são identificadas. O exemplo de Zelda está disponível nos dois idiomas.
 
-### Idioma
+## Uma interface que acompanha a descoberta
 
-O seletor **PT | EN** no cabeçalho troca a interface entre português e inglês, e a escolha fica salva neste navegador. Pesquisas e conversas iniciadas depois da troca pedem a resposta da IA no idioma escolhido; citações literais continuam no idioma da fonte, e em inglês a IA prefere edições católicas em inglês. Estudos já salvos mantêm o idioma em que foram escritos. O exemplo de Zelda tem versão em inglês (`examples/zelda-*.en.json`), gerada a partir dos arquivos em português por `node scripts/build-example-en.mjs`, com as mesmas fontes conferidas e imagens.
+- **Apresentação livre:** a IA compõe cada etapa com textos, imagens, perguntas, cartões, escolhas, linhas do tempo e outras interações. O exemplo de Zelda é uma possibilidade de apresentação.
+- **Ligações:** as listas de fragmentos e cenas são embaralhadas para não sugerir pares prontos. Você escolhe uma ligação, guarda uma justificativa ou a leva para a conversa. Na visualização ampla, um fio vermelho une as escolhas.
+- **Rosáceas:** cada tema gera um vitral próprio. O modo altera as cores e o fôlego altera o número de pétalas; a rosácea também identifica o volume na estante.
+- **Glosas e estante:** anotações, ligações e histórico ficam no caderno local para retomar depois.
+- **Imagens com origem:** personagens, lugares, capturas e arte sacra podem acompanhar as leituras. Cada imagem mantém crédito e página de origem; arquivos que não puderem ser obtidos ficam indicados no acervo.
 
-### A interface
+As páginas interativas geradas rodam isoladamente. Uma escolha pode preparar uma mensagem; somente o envio explícito no painel inicia outro pedido ao provedor.
 
-- **Rosácea do tema:** cada obra gera um vitral próprio, sempre o mesmo para o mesmo tema. O modo muda as cores do vidro; o fôlego muda o número de pétalas. Ela aparece enquanto você digita, acende durante a pesquisa e marca a lombada do volume na estante.
-- **Tirar a sorte:** sorteia uma obra (jogos, filmes, livros, séries, animes e mangás) para começar.
-- **Ligações (modo estudo):** escolha um fragmento da Igreja e uma cena da obra; um fio vermelho liga os dois. As listas são embaralhadas para não sugerir pares prontos. Guarde a ligação com uma justificativa ou leve-a direto para a conversa. As ligações ficam salvas como texto e sobrevivem às etapas seguintes.
-- **Glosas:** as anotações pessoais ficam na margem do fólio, como nos manuscritos.
-- **Imagens:** a IA pode trazer personagens, lugares, mapas, itens e arte sacra, e decide onde e como mostrá-los (lado a lado, galeria, mapa grande). Ela indica a página onde a imagem aparece; o servidor baixa o arquivo, confere pelos próprios bytes que é PNG, JPEG, GIF ou WebP e guarda uma cópia local. Wikis da obra e o Wikimedia Commons respondem pela API do MediaWiki; nas demais páginas vale a imagem principal declarada (`og:image`). Imagens que não puderem ser baixadas (o Fandom costuma bloquear) simplesmente não aparecem e ficam listadas no acervo com o motivo. Crédito e página de origem acompanham cada imagem.
-- **Peças para a IA montar a página:** selos de fonte dentro do texto (clicáveis, abrem o acervo na referência), citações que só aparecem se o trecho foi localizado, falas da obra no idioma original com tradução livre sempre rotulada, e um conjunto de ícones. Com elas a IA compõe livremente cartões com ícones, captura de tela ao lado da fala, comparações lado a lado e outros formatos.
-- **Selos das fontes:** selo dourado para texto localizado, selo com lupa para conferir seção, selo tracejado para a conferir.
+## Fontes e limites
 
-O exemplo de Zelda já está preparado nos dois modos e pode ser aberto sem chamar um modelo. Continuar a conversa sobre o exemplo usa o provedor que você selecionar.
+As instruções de pesquisa pedem que a IA separe **fatos da obra**, **ensinamentos católicos** e **interpretações propostas pelo leitor**. Influência histórica documentada, simbolismo cristão possível e analogia pessoal são afirmações diferentes.
 
-### Modo estudo: uma investigação aberta
+As fontes podem incluir Bíblia em edição católica, Catecismo, documentos oficiais da Igreja, escritos de santos e material da própria obra. Textos de santos devem trazer obra e localização, distinguindo escritos espirituais ou teológicos de documentos do Magistério. A IA pode pedir esclarecimentos ou trazer menos material quando a identificação ou a evidência forem insuficientes.
 
-Fragmentos católicos e cenas da obra aparecem sem pares prontos. Você propõe uma hipótese; a próxima etapa pode examiná-la, pedir um detalhe, sugerir outra leitura ou abrir um novo desafio. Não há uma resposta única nem uma pontuação de fé.
+Depois de uma pesquisa, o servidor tenta abrir os links e localizar os pequenos trechos citados:
 
-A IA tem liberdade para criar a apresentação: cartas, escolhas, perguntas, entrevistas, linhas do tempo, pequenos desafios e outras interações. Ela decide o formato e a sequência a cada etapa. O aplicativo mantém o caderno, a conversa e as referências acessíveis. As interfaces geradas rodam isoladamente; só o painel principal inicia pedidos aos provedores.
+| Selo | O que informa |
+| --- | --- |
+| **Texto localizado** | O trecho foi encontrado na página consultada ou no material conferido na preparação do exemplo. |
+| **Conferir seção** | A página respondeu, mas o trecho exato não foi localizado ou não havia citação literal para comparar. |
+| **A conferir** | O acesso foi bloqueado, o formato não era suportado, o tempo esgotou ou faltou evidência. |
 
-### Resposta direta
+**Localizar uma frase não certifica a interpretação, a referência exata do parágrafo ou a aplicação teológica.** Falas da obra não localizadas são omitidas da apresentação. Leia as fontes em contexto: os modelos podem cometer erros e propor analogias fracas, e o Lumen não é uma autoridade eclesiástica.
 
-Traz a explicação completa, com evidência da obra, referência católica, interpretação proposta e limites da comparação. Também pode ter apresentação interativa, sem exigir uma tentativa para receber a explicação.
+O exemplo de Zelda identifica a transcrição de terceiros e recomenda compará-la com o jogo. Seus trechos foram preparados em **27/10/2026**; abrir o exemplo não faz nova conferência online.
 
-## Assinaturas
+## O que fica local
 
-- **ChatGPT:** Codex CLI, com login do ChatGPT. Não é uma automação da interface web do ChatGPT.
-- **Claude:** Claude Code, com login da assinatura Claude.
-- Não usa chaves de API. O aplicativo remove variáveis de chaves de API do ambiente dos processos e verifica o tipo de login antes de cada pesquisa.
-- Os limites, a disponibilidade e as condições dos planos continuam valendo. Não há troca automática de provedor nem tentativas de contornar limites.
+O servidor escuta apenas em `127.0.0.1`. O caderno é salvo no seu computador:
 
-Depois de instalar o CLI escolhido, faça o login da sua assinatura. Caso o login expire, entre novamente e atualize o status no painel:
+| Pasta | Conteúdo |
+| --- | --- |
+| `.data/studies/` | Estudos, etapas, conversa, ligações, glosas e estado das interações em JSON. |
+| `.data/media/` | Cópias locais das imagens dos estudos. |
+| `examples/media/` | Imagens incluídas no exemplo preparado de Zelda. |
+| `.runtime/` | Logs e arquivos de trabalho do servidor. |
 
-```sh
-codex login
-claude auth login
-```
+**Local se refere ao aplicativo e ao caderno. Os modelos são online.** O tema, os trechos fornecidos e o contexto da conversa são enviados ao provedor escolhido. Consultas de fontes e buscas de imagens também usam internet. O exemplo preparado pode ser lido offline com o servidor local ativo.
 
-O Codex é executado com pesquisa web, sandbox de leitura e shell desabilitado. O Claude recebe apenas WebSearch e WebFetch; MCPs, comandos de skills e hooks são desabilitados para essas execuções. O modelo recebe o pedido e o contexto do estudo, sem ferramentas para editar seus arquivos.
+O aplicativo não inclui analytics nem publica seus estudos em um serviço público. Dados pessoais do caderno, caches, arquivos de ambiente e atalhos gerados ficam fora do Git. Para fazer backup, copie `.data/studies/`; cada estudo também pode ser exportado em **Markdown** (texto, fontes e notas) ou **JSON** (inclui apresentação e histórico).
 
-## Fontes e honestidade
+## Desenvolvimento
 
-O sistema pede que a IA diferencie fatos da obra, ensinamentos católicos e interpretações do leitor. Referência histórica comprovada, simbolismo cristão possível e analogia pessoal são categorias distintas.
-
-A IA deve consultar Bíblia em edição católica, Catecismo, documentos oficiais e fontes da própria obra. Textos de santos podem ser usados com obra e localização identificadas, distinguindo sua condição de escritos espirituais ou teológicos da de documentos do Magistério. Não é obrigatório encontrar um paralelo para cada detalhe.
-
-Depois da resposta, o servidor tenta abrir as URLs e localizar os pequenos trechos citados. O painel distingue:
-
-- **Texto localizado:** o trecho foi encontrado na página ou no conteúdo consultado na preparação do exemplo. Isso não certifica a interpretação nem a localização exata do trecho dentro de toda a página.
-- **Conferir seção:** a página respondeu, mas o trecho exato não foi localizado ou não havia citação literal para comparar.
-- **A conferir:** acesso bloqueado, formato não suportado, tempo esgotado ou ausência de evidência suficiente.
-
-Falas da obra não localizadas são omitidas da apresentação. Citações verificadas são mantidas no idioma da fonte, com a edição identificada. O exemplo de Zelda usa transcrição de terceiros, explicitamente identificada, e recomenda comparar com o jogo. Os trechos foram preparados em 27/10/2026; abrir o exemplo não faz nova conferência online.
-
-Os modelos continuam podendo cometer erros e propor analogias fracas. O aplicativo não garante correção doutrinal ou pertinência hermenêutica. A conferência textual é uma ajuda para pesquisar, não um substituto da leitura de contexto. Em obras desconhecidas ou ambíguas, a IA pode pedir uma identificação ou devolver menos material.
-
-## Onde fica tudo
-
-- `.data/studies/`: estudos, etapas, histórico da conversa, estado das interações, ligações e glosas em JSON.
-- `.data/media/`: cópias locais das imagens usadas nos estudos. Pode ser apagada; as imagens voltam a ser baixadas na próxima etapa que as usar.
-- `examples/media/`: imagens do exemplo de Zelda, para ele abrir sem internet.
-- `.runtime/`: logs técnicos do servidor e arquivos temporários. O painel não copia credenciais de login.
-- `prompts/sistema.md`: instruções comuns aos dois provedores, incluindo regras de evidência, modos e liberdade criativa.
-- `examples/`: exemplo preparado de Zelda nos dois modos.
-- `public/`: interface, gerador de rosáceas (`rose.js`), fontes locais e renderizador da experiência.
-- `.firecrawl/`: cache utilizado na pesquisa de preparação; não é necessário para usar o aplicativo.
-
-Para fazer backup, copie `.data/studies`. Cada estudo também pode ser exportado em Markdown ou JSON. O JSON contém a apresentação interativa e o histórico; o Markdown privilegia texto, fontes e anotações.
-
-**Local significa que o aplicativo e o caderno ficam no seu computador.** Os modelos Claude e ChatGPT são serviços online: tema, trechos fornecidos e contexto da conversa são enviados ao provedor escolhido. As consultas de fontes e as buscas de imagens também usam internet. O exemplo preparado pode ser lido offline com o servidor local ativo. A aplicação não hospeda seus estudos em um serviço público e não inclui analytics. Seus estudos, glosas, credenciais e caches não fazem parte deste repositório.
-
-## Validação
+Aplicativo em Node.js, sem dependências npm de execução, com interface em HTML, CSS e JavaScript.
 
 ```sh
 npm test
 ```
 
-Os testes locais cobrem os contratos de resposta, separação de modos, conferência de fontes, argumentos dos CLIs, credenciais no ambiente e restrições do servidor. Os testes com modelos reais usam as assinaturas e são executados separadamente para evitar consumo automático.
+A suíte local cobre contratos de resposta, separação dos modos, fontes, imagens, argumentos dos CLIs, credenciais no ambiente e persistência e restrições do servidor. Ela não chama modelos reais nem consome a assinatura automaticamente; tampouco certifica correção teológica.
 
-Documentação das integrações: [modo não interativo do Codex](https://learn.chatgpt.com/docs/non-interactive-mode) e [uso programático do Claude Code](https://code.claude.com/docs/en/headless). Fontes tipográficas Grenze Gotisch e Alegreya distribuídas sob SIL Open Font License; licenças em `public/fonts/`.
+<details>
+<summary>Estrutura, configuração e integração com os provedores</summary>
 
-## Licença e contribuições
+| Caminho | Responsabilidade |
+| --- | --- |
+| `server.mjs` | Servidor local, estudos, pesquisas e apresentações. |
+| `lib/` | Contratos de dados, prompts, provedores, fontes e imagens. |
+| `public/` | Interface, traduções, rosáceas, fontes e renderizador. |
+| `prompts/sistema.md` | Instruções de pesquisa, evidência, modos e liberdade de apresentação. |
+| `examples/` | Exemplos preparados de Zelda em PT/EN, nos dois modos. |
+| `scripts/` | Abertura no macOS e preparação dos exemplos. |
+| `tests/` | Testes locais sem chamadas aos modelos. |
 
-O código original do Lumen está sob [licença MIT](LICENSE). Fontes tipográficas, imagens da Nintendo, capturas de tela e textos citados mantêm suas condições próprias; veja [créditos de terceiros](THIRD_PARTY.md). Projeto independente, sem vínculo oficial com a Igreja, Nintendo, OpenAI ou Anthropic.
+Configurações opcionais por variável de ambiente:
 
-Sugestões, correções de referências e contribuições de código são bem-vindas. Ao abrir uma issue, evite incluir credenciais, glosas pessoais ou arquivos completos da sua pasta `.data`.
+- `LUMEN_PORT`: porta do servidor; padrão `4318`.
+- `LUMEN_DATA_DIR`: pasta dos estudos; padrão `.data/studies/`.
+- `LUMEN_MEDIA_DIR`: pasta de imagens; padrão `.data/media/`, ou `media/` dentro de `LUMEN_DATA_DIR` quando definido.
+
+O Codex usa pesquisa web e sandbox de leitura, com shell desabilitado. O Claude recebe apenas WebSearch e WebFetch, com MCPs, comandos de skills e hooks desabilitados nessas execuções. O aplicativo remove variáveis de chaves de API dos processos e verifica o tipo de login antes de cada pesquisa.
+
+Referências: [Codex CLI](https://developers.openai.com/codex/cli/) e [uso programático do Claude Code](https://code.claude.com/docs/en/headless).
+
+</details>
+
+## Contribuir e reutilizar
+
+Correções de referências, relatos de problemas e contribuições de código são bem-vindos nas [issues](https://github.com/DiogoSabec/lumen/issues) e nos pull requests. Para relatar um problema, informe o sistema, o provedor e os passos para reproduzir, sem incluir credenciais ou glosas pessoais.
+
+O código original é distribuído sob [licença MIT](LICENSE). Fontes tipográficas, imagens da Nintendo, capturas de tela e textos citados mantêm suas próprias condições; veja os [créditos de terceiros](THIRD_PARTY.md).
+
+Projeto independente, sem vínculo oficial com a Igreja, Nintendo, OpenAI ou Anthropic.
