@@ -1,0 +1,253 @@
+{
+  "title": "Zelda: Ocarina of Time",
+  "scope": "Nintendo 64 · diálogos em inglês · chamado inicial e encontro com Sheik na Cratera da Montanha da Morte · contém spoilers",
+  "introduction": "Separe um pequeno tempo, abra as fontes e observe duas cenas. As perguntas abaixo são um começo: registre o que aproxima os textos e o que resiste à comparação.",
+  "evidenceNote": "Exemplo preparado para este aplicativo em 27/10/2026. Os diálogos foram encontrados em uma transcrição de terceiros no GameFAQs; confira no jogo a edição e a localização. Bíblia: NABRE, edição católica em inglês publicada pela USCCB. Catecismo: edição em inglês no Vaticano. Documento conciliar: versão portuguesa oficial. As marcas de localização registram a tentativa automática feita na preparação; não certificam a pertinência da analogia nem são uma verificação contínua.",
+  "items": [
+    {
+      "title": "Um chamado na floresta",
+      "scene": "Paráfrase da cena: no começo do jogo, a Great Deku Tree comunica que foi amaldiçoada, pede a Link que enfrente a tarefa e solicita que Navi o acompanhe. Link é convidado a responder ao pedido antes de conhecer todo o caminho.",
+      "sceneLocator": "Ocarina of Time, N64, inglês · conversa com a Great Deku Tree antes da primeira masmorra.",
+      "quotation": "Dost thou have courage enough to undertake this task?",
+      "quotationReference": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/faqs/20240",
+      "question": "O que você observa na forma do pedido e na resposta de Link? Que critérios usaria para avaliar a ação dele?",
+      "references": [
+        {
+          "kind": "work",
+          "label": "Ocarina of Time — transcrição dos diálogos",
+          "locator": "Great Deku Tree · início da jornada",
+          "url": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/faqs/20240",
+          "excerpt": "",
+          "language": "Inglês · Nintendo 64; transcrição de fã",
+          "note": "Fonte secundária para localizar a fala. Busque a frase no texto e confira-a na sua edição do jogo.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "bible",
+          "label": "Evangelho segundo São João",
+          "locator": "Jo 16,25–33, especialmente 16,33",
+          "url": "https://bible.usccb.org/bible/john/16",
+          "excerpt": "In the world you will have trouble, but take courage, I have conquered the world.",
+          "language": "Inglês · NABRE (USCCB)",
+          "note": "Leia a fala de Jesus aos discípulos no seu contexto. O trecho em inglês é literal; nenhuma tradução portuguesa é apresentada como citação oficial.",
+          "check": {
+            "status": "located",
+            "message": "Trecho localizado na página. A pertinência da interpretação exige leitura.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "catechism",
+          "label": "Catecismo da Igreja Católica",
+          "locator": "CIC §§1805–1808; atenção ao §1808",
+          "url": "https://www.vatican.va/archive/ENG0015/__P65.HTM",
+          "excerpt": "Fortitude is the moral virtue that ensures firmness in difficulties and constancy in the pursuit of the good.",
+          "language": "Inglês · edição do Vaticano",
+          "note": "Leia também os parágrafos vizinhos. O trecho serve para localizar a passagem; sua aplicação à obra exige reflexão.",
+          "check": {
+            "status": "located",
+            "message": "Trecho localizado na página. A pertinência da interpretação exige leitura.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "church",
+          "label": "Francisco — catequese sobre a fortaleza",
+          "locator": "Audiência geral, 10 de abril de 2024 · Vícios e virtudes, 14",
+          "url": "https://www.vatican.va/content/francesco/pt/audiences/2024/documents/20240410-udienza-generale.html",
+          "excerpt": "",
+          "language": "Português · catequese em audiência geral",
+          "note": "Uma catequese papal tem gênero próprio; não é uma nova definição dogmática. Confira os exemplos e as distinções feitos no texto.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        }
+      ],
+      "hints": [
+        "Releia o diálogo e anote o que Link sabe, o que ainda não sabe e de quem recebe ajuda.",
+        "No CIC §1808, procure as expressões que indicam o fim de uma ação. Depois leia Jo 16,25–33 sem retirar o último versículo do contexto."
+      ],
+      "explanation": "",
+      "limits": "Quais aspectos da ação de Link encontram apoio nessas fontes e quais exigiriam outras distinções?",
+      "practice": "Faça duas colunas: fatos da cena e observações sobre as leituras. Escreva uma hipótese só depois de preencher as duas.",
+      "quotationStatus": "located"
+    },
+    {
+      "title": "Uma conversa na cratera",
+      "scene": "Paráfrase da cena: ao ensinar o Bolero of Fire, Sheik fala do crescimento da amizade ao longo do tempo. A conversa aparece na etapa adulta da jornada, na Cratera da Montanha da Morte.",
+      "sceneLocator": "Ocarina of Time, N64, inglês · encontro com Sheik na Death Mountain Crater, aprendizado do Bolero of Fire.",
+      "quotation": "It is something that grows over time... a true friendship.",
+      "quotationReference": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/faqs/20240",
+      "question": "Como a fala de Sheik descreve uma relação que amadurece? Depois das leituras, que aspectos você gostaria de examinar melhor?",
+      "references": [
+        {
+          "kind": "work",
+          "label": "Ocarina of Time — transcrição dos diálogos",
+          "locator": "Sheik · Bolero of Fire",
+          "url": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/faqs/20240",
+          "excerpt": "",
+          "language": "Inglês · Nintendo 64; transcrição de fã",
+          "note": "Fonte secundária. A fala foi localizada na transcrição; confira no jogo o contexto e a versão.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "bible",
+          "label": "Evangelho segundo São João",
+          "locator": "Jo 15,9–17, especialmente 15,12–15",
+          "url": "https://bible.usccb.org/bible/john/15",
+          "excerpt": "This is my commandment: love one another as I love you.",
+          "language": "Inglês · NABRE (USCCB)",
+          "note": "Observe quem fala, a quem se dirige e como o trecho se liga à imagem da videira no começo do capítulo.",
+          "check": {
+            "status": "located",
+            "message": "Trecho localizado no conteúdo consultado durante a preparação do exemplo. Confira a edição original.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "catechism",
+          "label": "Catecismo da Igreja Católica",
+          "locator": "CIC §1804 · leia também §§1805–1809",
+          "url": "https://www.vatican.va/archive/ENG0015/__P65.HTM",
+          "excerpt": "",
+          "language": "Inglês · edição do Vaticano",
+          "note": "Leia a definição de virtude humana e a relação entre hábitos, atos e vida moral.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "church",
+          "label": "Gaudium et spes — constituição pastoral",
+          "locator": "Concílio Vaticano II, 7 de dezembro de 1965 · §24",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_po.html",
+          "excerpt": "não se pode encontrar plenamente a não ser no sincero dom de si mesmo",
+          "language": "Português · versão oficial do Vaticano",
+          "note": "Leia todo o §24, sobre a natureza comunitária da vocação humana. Não trate uma frase isolada como conclusão sobre o jogo.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        }
+      ],
+      "hints": [
+        "Na fala de Sheik, observe a relação entre tempo, crescimento e ação. Que exemplos da própria narrativa você consegue localizar?",
+        "Leia Jo 15,9–17 por inteiro. Depois pergunte que informações o §24 de Gaudium et spes acrescenta à sua investigação."
+      ],
+      "explanation": "",
+      "limits": "Uma semelhança de linguagem já seria suficiente? O que muda quando você considera o contexto completo de cada texto?",
+      "practice": "Registre uma aproximação possível e uma diferença importante, indicando a frase ou seção que apoia cada observação.",
+      "quotationStatus": "located"
+    }
+  ],
+  "closingQuestions": [
+    "Qual hipótese você formulou depois de ler as fontes?",
+    "Qual passagem oferece o apoio mais forte? Qual detalhe da obra limita a sua leitura?",
+    "Que dúvida você levaria a uma próxima leitura ou conversa de formação?"
+  ],
+  "limitations": [
+    "Este exemplo recorta duas cenas; não oferece uma interpretação de todo o jogo.",
+    "A transcrição de diálogos é de terceiros, não uma publicação oficial da Nintendo. A redação pode variar por edição e localização.",
+    "As leituras bíblicas estão em inglês. Você pode comparar a referência com a sua Bíblia católica em português, identificando a tradução.",
+    "O estudo não apresenta prova de intenção cristã ou católica dos criadores."
+  ],
+  "presentation": {
+    "html": "<section><h2>Os primeiros fragmentos.</h2><p>Leia os textos como um pequeno conjunto de pistas. Não é preciso encontrar um par para cada cena.</p><figure data-lumen-image=\"3\" class=\"painting\"></figure><div class=\"fragments\"><article class=\"fragment\"><h3><span data-lumen-icon=\"bible\"></span>Fragmento A</h3><div data-lumen-quote=\"1\"></div></article><article class=\"fragment\"><h3><span data-lumen-icon=\"scroll\"></span>Fragmento B</h3><div data-lumen-quote=\"2\"></div></article><article class=\"fragment\"><h3><span data-lumen-icon=\"church\"></span>Fragmento C</h3><div data-lumen-source=\"7\"></div></article><article class=\"fragment\"><h3><span data-lumen-icon=\"quill\"></span>Fragmento D</h3><div data-lumen-source=\"3\"></div></article></div></section><section><h2>Fragmentos de Hyrule.</h2><div class=\"cast\"><figure data-lumen-image=\"0\"></figure><figure data-lumen-image=\"1\"></figure><figure data-lumen-image=\"2\"></figure></div><article class=\"clue\"><figure data-lumen-image=\"4\"></figure><div><h3>Uma pergunta na floresta</h3><p>No começo do jogo, a Great Deku Tree conta que foi amaldiçoada e pede a ajuda de Link, que ainda não conhece o caminho. Ela pergunta:</p><div data-lumen-dialogue=\"0\" data-translation=\"Tens coragem bastante para assumir esta tarefa?\"></div></div></article><article class=\"clue\"><figure data-lumen-image=\"5\"></figure><div><h3>Uma conversa com Sheik</h3><p>Já na etapa adulta da jornada, ao ensinar o Bolero of Fire na cratera, Sheik fala a Link sobre algo que cresce com o tempo:</p><div data-lumen-dialogue=\"1\" data-translation=\"É algo que cresce com o tempo... uma verdadeira amizade.\"></div></div></article></section><section class=\"challenge\"><h2>Escolha seu ponto de partida.</h2><p>Qual personagem, cena, objeto ou acontecimento veio à sua cabeça ao ler um desses textos? Por quê?</p><div class=\"choices\"><button data-choice=\"A\">A — João 16</button><button data-choice=\"B\">B — CIC 1808</button><button data-choice=\"C\">C — Gaudium et spes 24</button><button data-choice=\"D\">D — Catequese de Francisco</button></div><p>Você também pode propor uma cena que não apareceu aqui. O caminho não tem um gabarito escondido.</p></section>",
+    "css": "section+section{margin-top:38px}article{margin:27px 0}h3{font-size:21px;color:var(--lumen-blue)}.challenge{border:2px solid var(--lumen-ink);background:var(--lumen-paper-light);padding:25px;border-radius:3px;box-shadow:6px 6px 0 #2b1d1418}.challenge h2{margin-top:0}.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}.choices button{text-align:left}.painting img{max-height:480px}.fragments{display:grid;gap:14px}.fragment{margin:0;padding:16px 20px;border:1.5px solid var(--lumen-ink);border-radius:3px;background:var(--lumen-paper-light)}.fragment h3{display:flex;align-items:center;gap:10px;margin:0}.fragment .lumen-quote{margin:10px 0 0}.fragment .lumen-source{margin:0;padding:6px 0 0;border-top:0}.cast{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.cast .lumen-image{margin:0}.cast .lumen-image img{height:260px}.clue{display:grid;grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:22px;align-items:start;margin:32px 0}.clue .lumen-image{margin:0}.clue h3{margin:0 0 6px}.clue p{margin:0 0 10px}.clue .lumen-dialogue blockquote{font-size:22px}@media(max-width:550px){.choices,.clue{grid-template-columns:1fr}.challenge{padding:18px}.cast{grid-template-columns:1fr 1fr}}",
+    "javascript": "document.querySelectorAll('[data-choice]').forEach(button=>{if(Lumen.state.choice===button.dataset.choice)button.setAttribute('aria-pressed','true');button.addEventListener('click',()=>{document.querySelectorAll('[data-choice]').forEach(b=>b.setAttribute('aria-pressed','false'));button.setAttribute('aria-pressed','true');Lumen.saveState({choice:button.dataset.choice});Lumen.draft('Escolhi o fragmento '+button.dataset.choice+'. A cena que veio à minha cabeça foi... Minha interpretação é...');});});",
+    "invitation": "Conte o que você encontrou. Depois vamos confrontar sua hipótese com o contexto das fontes e procurar seus limites."
+  },
+  "images": [
+    {
+      "kind": "character",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Link_and_Navi_Artwork.png",
+      "url": "",
+      "alt": "Link, de túnica e gorro verdes, sentado num muro de tijolos tocando ocarina, com a fada Navi ao lado.",
+      "caption": "Link e Navi em Ocarina of Time.",
+      "credit": "Arte oficial da Nintendo, via Zelda Wiki.",
+      "file": "b1a61d03d2fbfe8afbfba6fe07150e4b.png",
+      "width": 906,
+      "height": 1182,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/0/0e/OoT_Link_and_Navi_Artwork.png",
+      "status": "ok"
+    },
+    {
+      "kind": "character",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Great_Deku_Tree_Artwork.png",
+      "url": "",
+      "alt": "Uma árvore enorme e antiga, com rosto de olhos fechados e bigode formado no tronco.",
+      "caption": "A Great Deku Tree em Ocarina of Time.",
+      "credit": "Arte oficial da Nintendo, via Zelda Wiki.",
+      "file": "ee687f6a5f3db88cbd1594b9ce054150.png",
+      "width": 1200,
+      "height": 1151,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/thumb/6/67/OoT_Great_Deku_Tree_Artwork.png/1200px-OoT_Great_Deku_Tree_Artwork.png",
+      "status": "ok"
+    },
+    {
+      "kind": "character",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Sheik_Artwork.png",
+      "url": "",
+      "alt": "Sheik, de roupa azul justa, com o rosto parcialmente coberto por faixas e o símbolo de um olho no peito.",
+      "caption": "Sheik em Ocarina of Time.",
+      "credit": "Arte oficial da Nintendo, via Zelda Wiki.",
+      "file": "e0cf448c44fd45c98a23eff47d8d325f.png",
+      "width": 1200,
+      "height": 2774,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/thumb/e/e5/OoT_Sheik_Artwork.png/1200px-OoT_Sheik_Artwork.png",
+      "status": "ok"
+    },
+    {
+      "kind": "artwork",
+      "page": "https://commons.wikimedia.org/wiki/File:Christ_Taking_Leave_of_the_Apostles.jpg",
+      "url": "",
+      "alt": "Pintura sobre fundo dourado: Cristo sentado fala a um grupo de apóstolos reunidos à sua volta.",
+      "caption": "Cristo despede-se dos apóstolos, painel da Maestà (1308–1311).",
+      "credit": "Duccio di Buoninsegna, Museo dell’Opera del Duomo, Siena. Domínio público, via Wikimedia Commons.",
+      "file": "60ca5cb014b037ee63b38c06e1e59ff8.jpg",
+      "width": 849,
+      "height": 732,
+      "source": "https://upload.wikimedia.org/wikipedia/commons/4/45/Christ_Taking_Leave_of_the_Apostles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "status": "ok"
+    },
+    {
+      "kind": "scene",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Great_Deku_Tree%27s_Meadow.png",
+      "url": "",
+      "alt": "Captura do jogo: Link, pequeno, diante do tronco enorme da Great Deku Tree, numa clareira da floresta.",
+      "caption": "A clareira da Great Deku Tree (Nintendo 64).",
+      "credit": "Captura de tela de Ocarina of Time (Nintendo), via Zelda Wiki.",
+      "file": "e354c397ea272e4595718e5ce8fa9d49.png",
+      "width": 1200,
+      "height": 675,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/thumb/4/4f/OoT_Great_Deku_Tree%27s_Meadow.png/1200px-OoT_Great_Deku_Tree%27s_Meadow.png",
+      "status": "ok"
+    },
+    {
+      "kind": "scene",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Bolero_of_Fire.png",
+      "url": "",
+      "alt": "Captura do jogo: Link e Sheik frente a frente numa ponte de madeira, sob luz avermelhada, dentro da cratera.",
+      "caption": "Link e Sheik na Cratera da Montanha da Morte (Nintendo 64).",
+      "credit": "Captura de tela de Ocarina of Time (Nintendo), via Zelda Wiki.",
+      "file": "f586edf618201d197e069804e1640260.png",
+      "width": 632,
+      "height": 351,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/f/fc/OoT_Bolero_of_Fire.png",
+      "status": "ok"
+    }
+  ]
+}

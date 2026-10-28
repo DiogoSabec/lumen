@@ -1,0 +1,15 @@
+.firecrawl/
+.data/
+.runtime/
+.DS_Store
+node_modules/
+.gstack/
+.backup/
+.impeccable/
+*.app/
+.env
+.env.*
+!.env.example
+*.log
+PRODUCT.md
+DESIGN.md

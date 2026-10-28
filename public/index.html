@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c2878">
+  <title>Lumen — histórias contra a luz</title>
+  <link rel="icon" href="/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/grenze-gotisch.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/alegreya.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <a href="#main" class="skip" data-i18n="skip">Ir para o conteúdo</a>
+  <header class="masthead">
+    <a href="#explorar" class="wordmark" aria-label="Lumen, início" data-i18n-aria-label="home-aria"><span class="wordmark-rose" id="wordmark-rose"></span><span class="wordmark-name">lumen</span></a>
+    <nav class="main-nav" aria-label="Navegação principal" data-i18n-aria-label="nav-aria">
+      <a href="#explorar" data-nav="explorar" class="nav-link"><span data-icon="lantern"></span><span class="nav-label" data-i18n="nav-investigate">Investigar</span></a>
+      <a href="#caderno" data-nav="caderno" class="nav-link"><span data-icon="shelf"></span><span class="nav-label" data-i18n="nav-shelf">Estante</span><span id="notebook-count" class="nav-count">0</span></a>
+      <a href="#fontes" data-nav="fontes" class="nav-link"><span data-icon="library"></span><span class="nav-label" data-i18n="nav-method">Método</span></a>
+    </nav>
+    <div class="masthead-tools">
+      <span class="local-status"><span class="local-dot"></span><span data-i18n="local-status">O caderno fica neste Mac</span></span>
+      <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-aria-label="lang-aria"><button type="button" data-lang="pt" lang="pt-BR" title="Português">PT</button><button type="button" data-lang="en" lang="en" title="English">EN</button></div>
+      <button id="refresh-status" class="icon-button" aria-label="Atualizar status dos provedores" title="Atualizar conexões" data-i18n-aria-label="refresh-aria" data-i18n-title="refresh-title"><span data-icon="refresh"></span></button>
+      <button id="how-button" class="icon-button" aria-label="Como funciona" title="Como funciona" data-i18n-aria-label="how-aria" data-i18n-title="how-aria"><span data-icon="help"></span></button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section id="explorar" class="page">
+      <div class="hero">
+        <div class="folio form-folio">
+          <h1 class="hero-title" data-i18n="hero-title"><span class="initial">P</span>onha uma história contra a luz.</h1>
+          <p class="hero-lead" data-i18n="hero-lead">Jogos, filmes, livros e animes lidos ao lado da Escritura, do Catecismo e dos documentos da Igreja. Você investiga; as fontes ficam à vista.</p>
+          <form id="study-form" class="investigation-form">
+            <label class="theme-label" for="theme" data-i18n="theme-label">Qual obra ou tema?</label>
+            <div class="theme-line"><input id="theme" name="theme" maxlength="500" required placeholder="Ex.: Zelda: Ocarina of Time" data-i18n-placeholder="theme-placeholder" autocomplete="off"></div>
+            <div class="suggestions" role="group" aria-label="Sugestões de obras" data-i18n-aria-label="suggestions-aria">
+              <button type="button" data-example="Zelda: Ocarina of Time" data-medium="Jogo">Zelda: Ocarina of Time</button>
+              <button type="button" data-example="O Senhor dos Anéis" data-example-en="The Lord of the Rings" data-medium="Livro" data-i18n="chip-lotr">O Senhor dos Anéis</button>
+              <button type="button" data-example="Fullmetal Alchemist: Brotherhood" data-medium="Anime">Fullmetal Alchemist</button>
+              <button type="button" id="roll-button" class="roll-button"><span data-icon="dice"></span><span data-i18n="roll">Tirar a sorte</span></button>
+            </div>
+
+            <fieldset class="mode-field">
+              <legend data-i18n="mode-legend">Como investigar</legend>
+              <div class="arches">
+                <label class="arch study"><input type="radio" name="mode" value="study" checked><span class="arch-glass"><span data-icon="lantern" class="arch-icon"></span><strong data-i18n="mode-study">Modo estudo</strong><span data-i18n="mode-study-text">Fragmentos, pistas e perguntas. A conexão é você quem descobre.</span></span></label>
+                <label class="arch direct"><input type="radio" name="mode" value="direct"><span class="arch-glass"><span data-icon="book" class="arch-icon"></span><strong data-i18n="mode-direct">Resposta direta</strong><span data-i18n="mode-direct-text">A leitura explicada do começo ao fim, com fontes e limites.</span></span></label>
+              </div>
+            </fieldset>
+
+            <div class="form-row">
+              <fieldset class="companion">
+                <legend data-i18n="companion-legend">Quem pesquisa com você</legend>
+                <div class="segmented"><label><input type="radio" name="provider" value="claude"><span>Claude<span class="provider-dot" id="claude-dot"></span></span></label><label><input type="radio" name="provider" value="codex" checked><span>ChatGPT<span class="provider-dot" id="codex-dot"></span></span></label></div>
+                <p id="provider-status" class="provider-status" data-i18n="provider-checking">Conferindo o login das assinaturas…</p>
+              </fieldset>
+              <fieldset class="depth-field">
+                <legend data-i18n="depth-legend">Fôlego da pesquisa</legend>
+                <div class="candles">
+                  <label><input type="radio" name="depth" value="brief"><span class="candle-option"><span class="candle-art" data-candles="1"></span><strong data-i18n="depth-brief">Breve</strong><small data-i18n="depth-brief-text">até 2 trilhas</small></span></label>
+                  <label><input type="radio" name="depth" value="standard" checked><span class="candle-option"><span class="candle-art" data-candles="2"></span><strong data-i18n="depth-standard">Uma boa pausa</strong><small data-i18n="depth-standard-text">até 4 trilhas</small></span></label>
+                  <label><input type="radio" name="depth" value="deep"><span class="candle-option"><span class="candle-art" data-candles="3"></span><strong data-i18n="depth-deep">Mergulho</strong><small data-i18n="depth-deep-text">até 6 trilhas</small></span></label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="spoiler-row">
+              <label class="seal-toggle"><input type="checkbox" id="spoilers" name="spoilers" aria-describedby="spoiler-description"><span class="wax" id="wax" aria-hidden="true"></span><span class="seal-text"><strong data-i18n="spoilers-label">Pode incluir spoilers</strong><span id="spoiler-description">Lacrado: só a premissa, por padrão.</span></span></label>
+              <div id="spoiler-limit-field"><label for="spoilerLimit"><span data-i18n="spoiler-limit">Até onde você já conhece a história?</span> <span class="optional" data-i18n="optional">opcional</span></label><input id="spoilerLimit" name="spoilerLimit" maxlength="500" placeholder="Ex.: até o episódio 8" data-i18n-placeholder="spoiler-limit-placeholder"></div>
+            </div>
+
+            <details class="context-details">
+              <summary><span data-icon="plus"></span><span data-i18n="scope-summary">Personalizar o recorte</span></summary>
+              <div class="context-fields">
+                <div class="two-fields">
+                  <div><label for="medium" data-i18n="medium-label">Tipo de obra</label><select id="medium" name="medium"><option value="Jogo" data-i18n="medium-game">Jogo</option><option value="Filme" data-i18n="medium-film">Filme</option><option value="Série" data-i18n="medium-series">Série</option><option value="Livro" data-i18n="medium-book">Livro</option><option value="Mangá" data-i18n="medium-manga">Mangá</option><option value="Anime" data-i18n="medium-anime">Anime</option><option value="Tema livre" data-i18n="medium-free">Tema livre</option></select></div>
+                  <div><label for="scope" data-i18n="scope-label">Edição, personagem ou tema</label><input id="scope" name="scope" maxlength="2000" placeholder="Ex.: N64, coragem e amizade" data-i18n-placeholder="scope-placeholder"></div>
+                </div>
+                <label for="evidence"><span data-i18n="evidence-label">Trechos ou fontes que você já tem</span> <span class="optional" data-i18n="optional">opcional</span></label>
+                <textarea id="evidence" name="evidence" rows="3" maxlength="20000" placeholder="Cole um diálogo, uma cena ou um trecho com a referência. O texto ajuda a evitar suposições." data-i18n-placeholder="evidence-placeholder"></textarea>
+              </div>
+            </details>
+
+            <div id="form-error" class="error-message" role="alert" hidden></div>
+            <div class="form-actions">
+              <button type="submit" class="primary-button" id="generate-button" data-i18n="start">Começar investigação</button>
+              <button type="button" id="copy-prompt" class="text-button" data-i18n="copy-prompt">Copiar prompt</button>
+            </div>
+            <p class="form-foot"><span data-icon="shield"></span><span data-i18n="form-foot">Usa o login da sua assinatura, sem chave de API. O tema só vai ao provedor quando você começa.</span></p>
+          </form>
+        </div>
+
+        <aside class="hero-window" aria-labelledby="window-caption">
+          <div class="window-niche"><div id="preview-rose" class="rose-frame"></div></div>
+          <p class="window-caption" id="window-caption">Cada tema acende uma rosácea própria. Ela marca o estudo na sua estante.</p>
+        </aside>
+      </div>
+
+      <section class="example-band" aria-labelledby="example-title">
+        <div>
+          <h2 id="example-title" data-i18n="example-title">Sem tema em mente?</h2>
+          <p data-i18n="example-text">Abra o exemplo de Zelda, preparado com cenas, leituras e fontes conferidas. Não usa sua assinatura e contém spoilers da jornada.</p>
+        </div>
+        <div class="example-actions">
+          <button class="secondary-button on-vault" data-demo="study" data-i18n="example-study">Abrir em modo estudo</button>
+          <button class="secondary-button on-vault" data-demo="direct" data-i18n="example-direct">Abrir em resposta direta</button>
+        </div>
+      </section>
+    </section>
+
+    <section id="caderno" class="page" hidden>
+      <div class="page-head">
+        <div><h1 data-i18n="shelf-title">Estante</h1><p data-i18n="shelf-text">Cada investigação vira um volume. Abra um para continuar a conversa, rever as fontes ou ler suas glosas.</p></div>
+        <a class="primary-button" href="#explorar" data-i18n="new-investigation">Nova investigação</a>
+      </div>
+      <div id="notebook-list"></div>
+    </section>
+
+    <section id="fontes" class="page" hidden>
+      <div class="folio method-folio">
+        <h1 data-i18n="method-title"><span class="initial">U</span>ma leitura com raízes.</h1>
+        <p class="hero-lead" data-i18n="method-lead">O encontro entre uma obra e a fé começa com atenção ao que cada uma realmente diz.</p>
+        <h2 data-i18n="method-planes">Três planos, sempre separados</h2>
+        <ol class="triptych">
+          <li><span data-icon="scroll" class="panel-icon"></span><strong data-i18n="plane-work">O que a obra apresenta</strong><p data-i18n="plane-work-text">Cenas, falas e ações com edição e localização. Uma transcrição de fãs aparece identificada como fonte secundária.</p></li>
+          <li><span data-icon="keys" class="panel-icon"></span><strong data-i18n="plane-church">O que a Igreja ensina</strong><p data-i18n="plane-church-text">Escritura em edição católica, Catecismo e documentos oficiais, lidos no contexto. O gênero de cada documento fica identificado.</p></li>
+          <li><span data-icon="quill" class="panel-icon"></span><strong data-i18n="plane-reader">A leitura que você propõe</strong><p data-i18n="plane-reader-text">Uma analogia ou um contraste ajuda a pensar. Ser útil não prova a intenção do autor nem faz da obra uma exposição da fé.</p></li>
+        </ol>
+        <div class="method-columns">
+          <div>
+            <h2 data-i18n="seals-title">O que cada selo significa</h2>
+            <dl class="seal-legend">
+              <dt><span class="seal located"><span data-seal="located"></span><span data-i18n="seal-located">Texto localizado</span></span></dt><dd data-i18n="seal-located-text">O aplicativo encontrou o trecho citado na página. Isso confirma a presença do texto; o contexto e a aplicação você ainda avalia.</dd>
+              <dt><span class="seal reachable"><span data-seal="reachable"></span><span data-i18n="seal-reachable">Conferir seção</span></span></dt><dd data-i18n="seal-reachable-text">A página respondeu, mas o trecho exato não apareceu. Pode ser tradução ou carregamento. Confira antes de usar.</dd>
+              <dt><span class="seal pending"><span data-seal="pending"></span><span data-i18n="seal-pending">A conferir</span></span></dt><dd data-i18n="seal-pending-text">Não foi possível verificar. É uma pista de pesquisa. Falas da obra não localizadas ficam fora da apresentação.</dd>
+            </dl>
+            <h2 data-i18n="still-yours">O estudo continua sendo seu</h2>
+            <p data-i18n="still-yours-text">Os modelos podem errar, mesmo com instruções rigorosas. O Lumen pede fontes, tenta localizar os trechos e mostra as incertezas; não certifica interpretações. Poucas conexões bem fundamentadas valem mais que uma lista de paralelos forçados.</p>
+          </div>
+          <aside class="source-library">
+            <h2 data-i18n="desk">Na mesa de leitura</h2>
+            <a href="https://www.vatican.va/archive/cathechism_po/index_new/prima-pagina-cic_po.html" data-i18n-href="desk-catechism-href" target="_blank" rel="noreferrer noopener"><strong data-i18n="desk-catechism">Catecismo</strong><span data-i18n="desk-catechism-text">Edição em português, Vaticano</span><span data-icon="external"></span></a>
+            <a href="https://www.vatican.va/archive/hist_councils/ii_vatican_council/index_po.htm" data-i18n-href="desk-council-href" target="_blank" rel="noreferrer noopener"><strong data-i18n="desk-council">Concílio Vaticano II</strong><span data-i18n="desk-council-text">Constituições, decretos e declarações</span><span data-icon="external"></span></a>
+            <a href="https://bible.usccb.org/bible" target="_blank" rel="noreferrer noopener"><strong data-i18n="desk-scripture">Sagrada Escritura</strong><span data-i18n="desk-scripture-text">NABRE, edição católica em inglês</span><span data-icon="external"></span></a>
+            <a href="https://www.vatican.va/content/vatican/pt.html" data-i18n-href="desk-documents-href" target="_blank" rel="noreferrer noopener"><strong data-i18n="desk-documents">Documentos da Igreja</strong><span data-i18n="desk-documents-text">Acervo da Santa Sé</span><span data-icon="external"></span></a>
+            <h3 data-i18n="desk-local">Seu computador, suas anotações</h3>
+            <p data-i18n="desk-local-text">O servidor aceita conexões só deste Mac. Estudos e glosas ficam na pasta local do Lumen. Os CLIs enviam o pedido ao provedor escolhido e consultam a web; não é uma IA offline.</p>
+            <h3 data-i18n="desk-plans">Assinaturas</h3>
+            <p data-i18n="desk-plans-text">Claude usa o Claude Code. ChatGPT usa o Codex CLI. Os limites dos planos continuam valendo, e o painel nunca troca de provedor sozinho.</p>
+            <div id="connection-details"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultado" class="page" hidden></section>
+
+    <section id="andamento" class="page" hidden>
+      <div class="working-view">
+        <div id="working-rose" class="rose-frame working-rose"></div>
+        <h1 id="working-title">Sua investigação</h1>
+        <p id="job-progress" class="job-progress" role="status" data-i18n="working-progress">Preparando sua investigação…</p>
+        <p class="working-time" id="working-time" data-i18n="working-time">A pesquisa pode levar alguns minutos.</p>
+        <p class="working-note" data-i18n="working-note">A rosácea acende enquanto a pesquisa avança: achar a cena, abrir as fontes, conferir os trechos.</p>
+        <button class="secondary-button on-vault" id="cancel-job" data-i18n="cancel-job">Interromper pesquisa</button>
+        <p id="job-error" class="error-message" role="alert" hidden></p>
+        <a href="#explorar" id="job-back" class="text-button on-vault" hidden data-i18n="job-back">Voltar à investigação</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" role="status" class="toast" hidden></div>
+  <dialog id="how-dialog" aria-labelledby="how-title">
+    <button class="icon-button dialog-close" id="close-how" aria-label="Fechar instruções" data-i18n-aria-label="close-how"><span data-icon="close"></span></button>
+    <h2 id="how-title" data-i18n="how-title"><span class="initial">D</span>a curiosidade à estante.</h2>
+    <ol class="how-steps">
+      <li><strong data-i18n="how-1">Escolha a obra e o modo.</strong><p data-i18n="how-1-text">O modo estudo traz fragmentos e perguntas. A resposta direta explica as relações e os limites.</p></li>
+      <li><strong data-i18n="how-2">Escolha quem pesquisa.</strong><p data-i18n="how-2-text">Claude Code ou Codex CLI usam o login da sua assinatura, em segundo plano, só com ferramentas de pesquisa.</p></li>
+      <li><strong data-i18n="how-3">Leia, ligue, anote.</strong><p data-i18n="how-3-text">Abra as fontes, ligue fragmentos às cenas, escreva glosas e continue a conversa. Tudo fica salvo neste Mac.</p></li>
+    </ol>
+    <p class="muted" data-i18n="how-note">Sem publicação e sem chave de API. Modelos e consultas às fontes precisam de internet e seguem os limites do seu plano.</p>
+    <button id="understood" class="primary-button" data-i18n="how-ok">Vamos investigar</button>
+  </dialog>
+</body>
+</html>

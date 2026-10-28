@@ -1,0 +1,12 @@
+{
+  "name": "lumen-estudo-catolico",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Caderno local de investigação católica de obras e temas, com Claude Code e Codex CLI.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

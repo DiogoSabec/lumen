@@ -1,0 +1,253 @@
+{
+  "title": "Zelda: Ocarina of Time",
+  "scope": "Nintendo 64 · diálogos em inglês · chamado inicial e encontro com Sheik na Cratera da Montanha da Morte · contém spoilers",
+  "introduction": "Duas cenas permitem propor uma leitura sobre a fortaleza orientada ao bem e o amadurecimento da amizade. As aproximações abaixo são interpretações do leitor, apoiadas em fontes católicas; não demonstram intenção religiosa dos criadores.",
+  "evidenceNote": "Exemplo preparado para este aplicativo em 27/10/2026. Os diálogos foram encontrados em uma transcrição de terceiros no GameFAQs; confira no jogo a edição e a localização. Bíblia: NABRE, edição católica em inglês publicada pela USCCB. Catecismo: edição em inglês no Vaticano. Documento conciliar: versão portuguesa oficial. As marcas de localização registram a tentativa automática feita na preparação; não certificam a pertinência da analogia nem são uma verificação contínua.",
+  "items": [
+    {
+      "title": "A coragem precisa de um bem a servir",
+      "scene": "Paráfrase da cena: no começo do jogo, a Great Deku Tree comunica que foi amaldiçoada, pede a Link que enfrente a tarefa e solicita que Navi o acompanhe. Link é convidado a responder ao pedido antes de conhecer todo o caminho.",
+      "sceneLocator": "Ocarina of Time, N64, inglês · conversa com a Great Deku Tree antes da primeira masmorra.",
+      "quotation": "Dost thou have courage enough to undertake this task?",
+      "quotationReference": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/faqs/20240",
+      "question": "O que você observa na forma do pedido e na resposta de Link? Que critérios usaria para avaliar a ação dele?",
+      "references": [
+        {
+          "kind": "work",
+          "label": "Ocarina of Time — transcrição dos diálogos",
+          "locator": "Great Deku Tree · início da jornada",
+          "url": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/faqs/20240",
+          "excerpt": "",
+          "language": "Inglês · Nintendo 64; transcrição de fã",
+          "note": "Fonte secundária para localizar a fala. Busque a frase no texto e confira-a na sua edição do jogo.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "bible",
+          "label": "Evangelho segundo São João",
+          "locator": "Jo 16,25–33, especialmente 16,33",
+          "url": "https://bible.usccb.org/bible/john/16",
+          "excerpt": "In the world you will have trouble, but take courage, I have conquered the world.",
+          "language": "Inglês · NABRE (USCCB)",
+          "note": "Leia a fala de Jesus aos discípulos no seu contexto. O trecho em inglês é literal; nenhuma tradução portuguesa é apresentada como citação oficial.",
+          "check": {
+            "status": "located",
+            "message": "Trecho localizado na página. A pertinência da interpretação exige leitura.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "catechism",
+          "label": "Catecismo da Igreja Católica",
+          "locator": "CIC §§1805–1808; atenção ao §1808",
+          "url": "https://www.vatican.va/archive/ENG0015/__P65.HTM",
+          "excerpt": "Fortitude is the moral virtue that ensures firmness in difficulties and constancy in the pursuit of the good.",
+          "language": "Inglês · edição do Vaticano",
+          "note": "Leia também os parágrafos vizinhos. O trecho serve para localizar a passagem; sua aplicação à obra exige reflexão.",
+          "check": {
+            "status": "located",
+            "message": "Trecho localizado na página. A pertinência da interpretação exige leitura.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "church",
+          "label": "Francisco — catequese sobre a fortaleza",
+          "locator": "Audiência geral, 10 de abril de 2024 · Vícios e virtudes, 14",
+          "url": "https://www.vatican.va/content/francesco/pt/audiences/2024/documents/20240410-udienza-generale.html",
+          "excerpt": "",
+          "language": "Português · catequese em audiência geral",
+          "note": "Uma catequese papal tem gênero próprio; não é uma nova definição dogmática. Confira os exemplos e as distinções feitos no texto.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        }
+      ],
+      "hints": [
+        "Releia o diálogo e anote o que Link sabe, o que ainda não sabe e de quem recebe ajuda.",
+        "No CIC §1808, procure as expressões que indicam o fim de uma ação. Depois leia Jo 16,25–33 sem retirar o último versículo do contexto."
+      ],
+      "explanation": "Leitura proposta: o pedido da Great Deku Tree permite pensar sobre uma coragem que responde à necessidade de outro. Link aceita uma tarefa difícil e recebe a companhia de Navi. Esses fatos narrativos sustentam uma aproximação limitada com a fortaleza; o perigo, por si só, ainda não torna uma ação virtuosa.\n\nO CIC §1808 descreve a fortaleza como firmeza nas dificuldades e constância na busca do bem. O §1806 acrescenta o papel da prudência em discernir o verdadeiro bem e escolher meios adequados. A lição católica que podemos investigar a partir da cena é que agir com coragem envolve perguntar pelo fim e pelos meios, além de vencer o medo.\n\nEm Jo 16,33, a coragem dos discípulos está ligada à vitória de Cristo, dentro de um discurso sobre tribulação, fé e paz nele. O texto oferece um horizonte cristão para refletir sobre dificuldades reais. A cena do jogo não demonstra essa fé nem substitui o sentido próprio da passagem.",
+      "limits": "O convite ficcional não basta para julgar moralmente cada ação do personagem. A fortaleza cristã inclui um bem verdadeiro e meios moralmente legítimos. Link não é identificado com Cristo, e a maldição do jogo não é tratada como doutrina sobre pecado ou possessão.",
+      "practice": "Escolha uma responsabilidade concreta que você vem adiando. Identifique o bem a proteger, um meio justo e uma ajuda que poderia pedir.",
+      "quotationStatus": "located"
+    },
+    {
+      "title": "A amizade amadurece em atos",
+      "scene": "Paráfrase da cena: ao ensinar o Bolero of Fire, Sheik fala do crescimento da amizade ao longo do tempo. A conversa aparece na etapa adulta da jornada, na Cratera da Montanha da Morte.",
+      "sceneLocator": "Ocarina of Time, N64, inglês · encontro com Sheik na Death Mountain Crater, aprendizado do Bolero of Fire.",
+      "quotation": "It is something that grows over time... a true friendship.",
+      "quotationReference": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/faqs/20240",
+      "question": "Como a fala de Sheik descreve uma relação que amadurece? Depois das leituras, que aspectos você gostaria de examinar melhor?",
+      "references": [
+        {
+          "kind": "work",
+          "label": "Ocarina of Time — transcrição dos diálogos",
+          "locator": "Sheik · Bolero of Fire",
+          "url": "https://gamefaqs.gamespot.com/n64/197771-the-legend-of-zelda-ocarina-of-time/faqs/20240",
+          "excerpt": "",
+          "language": "Inglês · Nintendo 64; transcrição de fã",
+          "note": "Fonte secundária. A fala foi localizada na transcrição; confira no jogo o contexto e a versão.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "bible",
+          "label": "Evangelho segundo São João",
+          "locator": "Jo 15,9–17, especialmente 15,12–15",
+          "url": "https://bible.usccb.org/bible/john/15",
+          "excerpt": "This is my commandment: love one another as I love you.",
+          "language": "Inglês · NABRE (USCCB)",
+          "note": "Observe quem fala, a quem se dirige e como o trecho se liga à imagem da videira no começo do capítulo.",
+          "check": {
+            "status": "located",
+            "message": "Trecho localizado no conteúdo consultado durante a preparação do exemplo. Confira a edição original.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "catechism",
+          "label": "Catecismo da Igreja Católica",
+          "locator": "CIC §1804 · leia também §§1805–1809",
+          "url": "https://www.vatican.va/archive/ENG0015/__P65.HTM",
+          "excerpt": "",
+          "language": "Inglês · edição do Vaticano",
+          "note": "Leia a definição de virtude humana e a relação entre hábitos, atos e vida moral.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        },
+        {
+          "kind": "church",
+          "label": "Gaudium et spes — constituição pastoral",
+          "locator": "Concílio Vaticano II, 7 de dezembro de 1965 · §24",
+          "url": "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_po.html",
+          "excerpt": "não se pode encontrar plenamente a não ser no sincero dom de si mesmo",
+          "language": "Português · versão oficial do Vaticano",
+          "note": "Leia todo o §24, sobre a natureza comunitária da vocação humana. Não trate uma frase isolada como conclusão sobre o jogo.",
+          "check": {
+            "status": "reachable",
+            "message": "Página acessível; o trecho exato não foi localizado. Confira a seção.",
+            "checkedAt": "2026-10-28T00:58:26.631Z"
+          }
+        }
+      ],
+      "hints": [
+        "Na fala de Sheik, observe a relação entre tempo, crescimento e ação. Que exemplos da própria narrativa você consegue localizar?",
+        "Leia Jo 15,9–17 por inteiro. Depois pergunte que informações o §24 de Gaudium et spes acrescenta à sua investigação."
+      ],
+      "explanation": "Leitura proposta: Sheik apresenta a amizade como algo que cresce no tempo. A fala abre uma pergunta sobre relações que ganham consistência por meio de uma história compartilhada. A aproximação é com o amadurecimento moral, sem supor que o jogo apresente a virtude cristã em sua plenitude.\n\nO CIC §1804 ensina que as virtudes humanas são disposições estáveis e que os atos moralmente bons participam de sua formação. A relação entre tempo, repetição e crescimento ajuda a passar do sentimento de amizade para a pergunta sobre atos concretos. Em Jo 15,9–17, Jesus situa o amor entre os discípulos no seu próprio amor e no dom da vida: é uma medida específica, mais exigente do que simples afinidade.\n\nGaudium et spes §24, ao tratar da vocação comunitária do ser humano, vincula o encontro de si ao dom sincero de si. Lidos juntos, os textos permitem propor esta lição: uma amizade cresce quando busca o bem do outro e se torna serviço concreto. Essa é uma reflexão católica feita a partir da cena, não uma mensagem oficialmente atribuída a Sheik ou à Nintendo.",
+      "limits": "A fala de Sheik sobre uma força que nasce da amizade pertence à linguagem fantástica do jogo. A caridade cristã não é energia mágica, e o simples passar do tempo não garante uma relação virtuosa. João fala do amor em Cristo, cujo contexto não pode ser reduzido a qualquer amizade ficcional.",
+      "practice": "Pense em uma amizade real. Escolha um gesto de atenção ou serviço que procure o bem dessa pessoa sem exigir retorno.",
+      "quotationStatus": "located"
+    }
+  ],
+  "closingQuestions": [
+    "A coragem precisa de um fim bom e de meios justos; o risco sozinho não a define como virtude.",
+    "O amadurecimento da amizade pode ser examinado à luz dos hábitos bons e do dom de si.",
+    "Que gesto pequeno faria essas leituras saírem do caderno e entrarem na sua semana?"
+  ],
+  "limitations": [
+    "Este exemplo recorta duas cenas; não oferece uma interpretação de todo o jogo.",
+    "A transcrição de diálogos é de terceiros, não uma publicação oficial da Nintendo. A redação pode variar por edição e localização.",
+    "As leituras bíblicas estão em inglês. Você pode comparar a referência com a sua Bíblia católica em português, identificando a tradução.",
+    "O estudo não apresenta prova de intenção cristã ou católica dos criadores."
+  ],
+  "presentation": {
+    "html": "<section><h2>A coragem precisa de um bem a servir</h2><div class=\"pair\"><figure data-lumen-image=\"1\"></figure><figure data-lumen-image=\"0\"></figure></div><div data-lumen-scene=\"0\"></div><p class=\"explanation\">Leitura proposta: o pedido da Great Deku Tree permite pensar sobre uma coragem que responde à necessidade de outro. Link aceita uma tarefa difícil e recebe a companhia de Navi. Esses fatos narrativos sustentam uma aproximação limitada com a fortaleza; o perigo, por si só, ainda não torna uma ação virtuosa.\n\nO CIC §1808 descreve a fortaleza como firmeza nas dificuldades e constância na busca do bem. O §1806 acrescenta o papel da prudência em discernir o verdadeiro bem e escolher meios adequados. A lição católica que podemos investigar a partir da cena é que agir com coragem envolve perguntar pelo fim e pelos meios, além de vencer o medo.\n\nEm Jo 16,33, a coragem dos discípulos está ligada à vitória de Cristo, dentro de um discurso sobre tribulação, fé e paz nele. O texto oferece um horizonte cristão para refletir sobre dificuldades reais. A cena do jogo não demonstra essa fé nem substitui o sentido próprio da passagem.</p><p class=\"cites\">Fontes desta leitura:<span data-lumen-cite=\"0\"></span><span data-lumen-cite=\"1\"></span><span data-lumen-cite=\"2\"></span><span data-lumen-cite=\"3\"></span></p><h3>Até onde vai a comparação</h3><p>O convite ficcional não basta para julgar moralmente cada ação do personagem. A fortaleza cristã inclui um bem verdadeiro e meios moralmente legítimos. Link não é identificado com Cristo, e a maldição do jogo não é tratada como doutrina sobre pecado ou possessão.</p><details><summary>Abrir as leituras</summary><div data-lumen-source=\"0\"></div><div data-lumen-source=\"1\"></div><div data-lumen-source=\"2\"></div><div data-lumen-source=\"3\"></div></details><p class=\"practice\">Escolha uma responsabilidade concreta que você vem adiando. Identifique o bem a proteger, um meio justo e uma ajuda que poderia pedir.</p></section><section><h2>A amizade amadurece em atos</h2><div class=\"pair\"><figure data-lumen-image=\"2\"></figure><figure data-lumen-image=\"3\"></figure></div><div data-lumen-scene=\"1\"></div><p class=\"explanation\">Leitura proposta: Sheik apresenta a amizade como algo que cresce no tempo. A fala abre uma pergunta sobre relações que ganham consistência por meio de uma história compartilhada. A aproximação é com o amadurecimento moral, sem supor que o jogo apresente a virtude cristã em sua plenitude.\n\nO CIC §1804 ensina que as virtudes humanas são disposições estáveis e que os atos moralmente bons participam de sua formação. A relação entre tempo, repetição e crescimento ajuda a passar do sentimento de amizade para a pergunta sobre atos concretos. Em Jo 15,9–17, Jesus situa o amor entre os discípulos no seu próprio amor e no dom da vida: é uma medida específica, mais exigente do que simples afinidade.\n\nGaudium et spes §24, ao tratar da vocação comunitária do ser humano, vincula o encontro de si ao dom sincero de si. Lidos juntos, os textos permitem propor esta lição: uma amizade cresce quando busca o bem do outro e se torna serviço concreto. Essa é uma reflexão católica feita a partir da cena, não uma mensagem oficialmente atribuída a Sheik ou à Nintendo.</p><p class=\"cites\">Fontes desta leitura:<span data-lumen-cite=\"4\"></span><span data-lumen-cite=\"5\"></span><span data-lumen-cite=\"6\"></span><span data-lumen-cite=\"7\"></span></p><h3>Até onde vai a comparação</h3><p>A fala de Sheik sobre uma força que nasce da amizade pertence à linguagem fantástica do jogo. A caridade cristã não é energia mágica, e o simples passar do tempo não garante uma relação virtuosa. João fala do amor em Cristo, cujo contexto não pode ser reduzido a qualquer amizade ficcional.</p><details><summary>Abrir as leituras</summary><div data-lumen-source=\"4\"></div><div data-lumen-source=\"5\"></div><div data-lumen-source=\"6\"></div><div data-lumen-source=\"7\"></div></details><p class=\"practice\">Pense em uma amizade real. Escolha um gesto de atenção ou serviço que procure o bem dessa pessoa sem exigir retorno.</p></section>",
+    "css": "section{margin-bottom:45px}.explanation{white-space:pre-line;line-height:1.8}summary{cursor:pointer;font-weight:700;color:var(--lumen-blue)}.practice{background:#23358f0f;border-left:3px solid var(--lumen-blue);padding:18px 20px}h3{margin-top:28px;font-size:22px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pair .lumen-image{margin:0}.pair .lumen-image img{height:300px}@media(max-width:550px){.pair{grid-template-columns:1fr}}.cites{display:flex;flex-wrap:wrap;align-items:center;gap:6px 0;font-size:15px;font-style:italic;color:var(--lumen-muted)}",
+    "javascript": "",
+    "invitation": "Qual dessas leituras você gostaria de questionar ou aprofundar?"
+  },
+  "images": [
+    {
+      "kind": "character",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Link_and_Navi_Artwork.png",
+      "url": "",
+      "alt": "Link, de túnica e gorro verdes, sentado num muro de tijolos tocando ocarina, com a fada Navi ao lado.",
+      "caption": "Link e Navi em Ocarina of Time.",
+      "credit": "Arte oficial da Nintendo, via Zelda Wiki.",
+      "file": "b1a61d03d2fbfe8afbfba6fe07150e4b.png",
+      "width": 906,
+      "height": 1182,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/0/0e/OoT_Link_and_Navi_Artwork.png",
+      "status": "ok"
+    },
+    {
+      "kind": "character",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Great_Deku_Tree_Artwork.png",
+      "url": "",
+      "alt": "Uma árvore enorme e antiga, com rosto de olhos fechados e bigode formado no tronco.",
+      "caption": "A Great Deku Tree em Ocarina of Time.",
+      "credit": "Arte oficial da Nintendo, via Zelda Wiki.",
+      "file": "ee687f6a5f3db88cbd1594b9ce054150.png",
+      "width": 1200,
+      "height": 1151,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/thumb/6/67/OoT_Great_Deku_Tree_Artwork.png/1200px-OoT_Great_Deku_Tree_Artwork.png",
+      "status": "ok"
+    },
+    {
+      "kind": "character",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Sheik_Artwork.png",
+      "url": "",
+      "alt": "Sheik, de roupa azul justa, com o rosto parcialmente coberto por faixas e o símbolo de um olho no peito.",
+      "caption": "Sheik em Ocarina of Time.",
+      "credit": "Arte oficial da Nintendo, via Zelda Wiki.",
+      "file": "e0cf448c44fd45c98a23eff47d8d325f.png",
+      "width": 1200,
+      "height": 2774,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/thumb/e/e5/OoT_Sheik_Artwork.png/1200px-OoT_Sheik_Artwork.png",
+      "status": "ok"
+    },
+    {
+      "kind": "artwork",
+      "page": "https://commons.wikimedia.org/wiki/File:Christ_Taking_Leave_of_the_Apostles.jpg",
+      "url": "",
+      "alt": "Pintura sobre fundo dourado: Cristo sentado fala a um grupo de apóstolos reunidos à sua volta.",
+      "caption": "Cristo despede-se dos apóstolos, painel da Maestà (1308–1311).",
+      "credit": "Duccio di Buoninsegna, Museo dell’Opera del Duomo, Siena. Domínio público, via Wikimedia Commons.",
+      "file": "60ca5cb014b037ee63b38c06e1e59ff8.jpg",
+      "width": 849,
+      "height": 732,
+      "source": "https://upload.wikimedia.org/wikipedia/commons/4/45/Christ_Taking_Leave_of_the_Apostles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "status": "ok"
+    },
+    {
+      "kind": "scene",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Great_Deku_Tree%27s_Meadow.png",
+      "url": "",
+      "alt": "Captura do jogo: Link, pequeno, diante do tronco enorme da Great Deku Tree, numa clareira da floresta.",
+      "caption": "A clareira da Great Deku Tree (Nintendo 64).",
+      "credit": "Captura de tela de Ocarina of Time (Nintendo), via Zelda Wiki.",
+      "file": "e354c397ea272e4595718e5ce8fa9d49.png",
+      "width": 1200,
+      "height": 675,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/thumb/4/4f/OoT_Great_Deku_Tree%27s_Meadow.png/1200px-OoT_Great_Deku_Tree%27s_Meadow.png",
+      "status": "ok"
+    },
+    {
+      "kind": "scene",
+      "page": "https://zeldawiki.wiki/wiki/File:OoT_Bolero_of_Fire.png",
+      "url": "",
+      "alt": "Captura do jogo: Link e Sheik frente a frente numa ponte de madeira, sob luz avermelhada, dentro da cratera.",
+      "caption": "Link e Sheik na Cratera da Montanha da Morte (Nintendo 64).",
+      "credit": "Captura de tela de Ocarina of Time (Nintendo), via Zelda Wiki.",
+      "file": "f586edf618201d197e069804e1640260.png",
+      "width": 632,
+      "height": 351,
+      "source": "https://cdn.wikimg.net/en/zeldawiki/images/f/fc/OoT_Bolero_of_Fire.png",
+      "status": "ok"
+    }
+  ]
+}
